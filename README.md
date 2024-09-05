@@ -34,13 +34,13 @@ Setting up the AnimeBinge project on your local machine is easy. Just follow the
   
 3. Install Dependencies
    Next, install the necessary npm packages:
-   npm install
+   `npm install`
 
 4. With everything installed, you’re ready to see the project in action. Here’s how:
    Start the Development Server
    
    Launch the development server with:
-   npm start
+   `npm start`
       
    This will start the app and open it in your default browser. You can usually find it at http://localhost:3000.
 
