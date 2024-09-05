@@ -30,7 +30,7 @@ Setting up the AnimeBinge project on your local machine is easy. Just follow the
 2. Navigate to the Project Directory
 
   Move into the project directory
-  cd animebinge-tech-exam
+  `cd animebinge-tech-exam`
   
 3. Install Dependencies
    Next, install the necessary npm packages:
