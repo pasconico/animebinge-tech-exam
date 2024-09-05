@@ -1,0 +1,44 @@
+[
+    {
+        "animeID": "01",
+        "animeTitle": "Attack On Titan",
+        "animeThumbnail": "01",
+        "animeCategory": "Adventure fiction, Dark fantasy, Martial Arts",
+        "ratings": "5.0"
+    },
+    {
+        "animeID": "02",
+        "animeTitle": "Jujutsu Kaisen",
+        "animeThumbnail": "02",
+        "animeCategory": "Adventure fiction,  Martial Arts",
+        "ratings": "5.0"
+    },
+    {
+        "animeID": "03",
+        "animeTitle": "One Piece",
+        "animeThumbnail": "03",
+        "animeCategory": "Adventure fiction, Comedy",
+        "ratings": "5.0"
+    },
+    {
+        "animeID": "04",
+        "animeTitle": "Attack On Titan",
+        "animeThumbnail": "04",
+        "animeCategory": "Adventure fiction, Dark fantasy, Martial Arts",
+        "ratings": "5.0"
+    },
+    {
+        "animeID": "05",
+        "animeTitle": "Jujutsu Kaisen",
+        "animeThumbnail": "05",
+        "animeCategory": "Adventure fiction,  Martial Arts",
+        "ratings": "5.0"
+    },
+    {
+        "animeID": "06",
+        "animeTitle": "One Piece",
+        "animeThumbnail": "06",
+        "animeCategory": "Adventure fiction,  Martial Arts",
+        "ratings": "5.0"
+    }
+]

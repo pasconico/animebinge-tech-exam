@@ -1,0 +1,248 @@
+/* Banner.css */
+.banner-container {
+	position: relative;
+}
+
+.banner-image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.banner-image::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 1;
+	background: linear-gradient(
+			to left,
+			rgba(0, 0, 0, 0.9) 20%,
+			rgba(0, 0, 0, 0) 50%
+		),
+		linear-gradient(to right, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 50%);
+}
+
+.banner {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: relative;
+	z-index: 0;
+}
+
+.banner-content {
+	position: absolute;
+	top: 40%;
+	bottom: 20px;
+	left: 5%;
+	color: #fff;
+	padding: 10px;
+	text-align: left;
+	max-width: 700px;
+	z-index: 2;
+}
+
+.banner-title {
+	font-size: 80px;
+	font-weight: 700;
+}
+
+.ratings-and-category {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.ratings-and-category-text {
+	margin: 0;
+}
+
+.ratings {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+}
+
+.banner-texts {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-family: "Outfit";
+}
+
+.banner {
+	width: 100%;
+	height: auto;
+}
+
+.banner-buttons {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+}
+
+a.watch-now-btn {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	background: #106580;
+	height: 44px;
+	align-items: center;
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+	color: #ffffff;
+	transition: background 0.3s ease;
+}
+
+a.watch-now-btn:hover {
+	background: #0b4a5e;
+}
+
+a.favorite-btn {
+	border: 1px solid #ffffff;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 25px !important;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: right !important;
+	right: 5%;
+}
+
+.slick-dots li {
+	display: inline-block;
+	margin: 0 5px;
+	position: relative;
+}
+
+.slick-dots li button:before {
+	font-family: "slick";
+	font-size: 6px;
+	line-height: 20px;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	content: "";
+	text-align: center;
+	opacity: 1 !important;
+	color: white !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: transparent;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+	opacity: 1 !important;
+	color: transparent;
+	content: "";
+	width: 20px;
+	height: 10px;
+	background: #106580;
+	border-radius: 99px;
+	position: absolute;
+	bottom: -10px;
+	top: 4px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.3s ease;
+	z-index: 1;
+}
+
+.slick-dots li:not(.slick-active) button:before {
+	width: 20px;
+	height: 20px;
+	transform: scale(1);
+	bottom: 0;
+	transition: all 0.3s ease;
+}
+
+.slick-next {
+	right: 0 !important;
+}
+
+.slick-list {
+	margin-bottom: -6px !important;
+}
+
+@media (max-width: 768px) {
+	.slick-dots {
+		bottom: 15px !important;
+		text-align: center;
+		right: 0;
+	}
+
+	.slick-dots li {
+		margin: 0 3px;
+	}
+
+	.slick-dots li button:before {
+		width: 15px;
+		height: 15px;
+		font-size: 10px !important;
+	}
+
+	.slick-dots li.slick-active button:before {
+		width: 30px;
+		height: 10px;
+	}
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+	.slick-dots {
+		display: none !important;
+	}
+}
+
+.categories {
+	position: absolute;
+	bottom: -38%;
+	left: 5%;
+	display: flex;
+	flex-direction: row;
+}
+
+.categories-text {
+	margin: 0 15px;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 16px;
+	position: relative;
+}
+
+.categories-text.active::after {
+	content: "";
+	display: block;
+	height: 4px;
+	border-radius: 5px;
+	background-color: #106580;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	right: 0;
+	width: 80%;
+	margin: auto;
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+	.categories {
+		bottom: 52% !important;
+	}
+}

@@ -1,0 +1,321 @@
+.anime-episodes-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	font-family: "Outfit";
+}
+
+.anime-header-link {
+	text-align: left;
+	margin-left: 5%;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.anime-episodes-item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-left: 5%;
+	gap: 25px;
+}
+
+.anime-thumbnail.episodes-list {
+	display: block;
+	width: 516px;
+	height: 621px;
+	border-radius: 21px;
+}
+
+.anime-image {
+	position: relative;
+	display: inline-block;
+	border-radius: 21px;
+	transition: box-shadow 0.3s ease-in-out;
+	height: 621px;
+}
+
+.anime-image:hover {
+	box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+}
+
+.anime-image::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30%;
+	background: linear-gradient(
+		180deg,
+		rgba(196, 196, 196, 0) 0%,
+		rgba(0, 0, 0, 0.421875) 45.83%,
+		#000000 100%
+	);
+
+	border-radius: 18px;
+	pointer-events: none;
+}
+
+.anime-episodes-details {
+	position: absolute;
+	bottom: 35px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: 0;
+	z-index: 2;
+	width: 100%;
+	padding: 0 20px;
+	font-family: "Outfit";
+}
+
+.anime-episodes-categ-and-ratings {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.anime-title.episodes-list {
+	padding: 0;
+	font-family: "Outfit";
+}
+
+.anime-image-episodes {
+	border-radius: 20px;
+	flex-shrink: 0;
+}
+
+.anime-image-episodes:hover {
+	cursor: pointer;
+}
+
+.anime-episodes-list-content {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.anime-episodes-texts {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-family: "Outfit";
+}
+
+.episodes-list-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.episode-text {
+	text-align: left;
+	font-family: "Outfit";
+	margin: 0;
+}
+
+.anime-episodes-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.anime-episodes-episode-title {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.anime-episodes-episode-desc {
+	font-size: 20px;
+	font-weight: 400;
+	color: #747474;
+	padding-right: 40%;
+}
+
+.anime-description {
+	font-family: "Outfit";
+	font-size: 20px;
+	font-weight: 400;
+	color: #747474;
+	margin: 0;
+	text-align: left;
+}
+
+.anime-episodes-left-content {
+	display: flex;
+	flex-direction: column;
+	width: 38%;
+	gap: 20px;
+}
+
+.anime-episodes-list-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.anime-episodes-content {
+		gap: 10px;
+		padding: 15px;
+		margin-top: 0;
+	}
+
+	.anime-header-link {
+		margin-left: 0;
+		font-size: 20px;
+	}
+
+	.anime-episodes-item {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.anime-thumbnail.episodes-list {
+		width: 100% !important;
+		height: 300px !important;
+	}
+
+	.anime-image {
+		height: 300px;
+	}
+
+	.anime-episodes-list-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 65%;
+		margin: auto;
+	}
+
+	.anime-episodes-details {
+		bottom: 10px;
+		padding: 0 5px;
+	}
+
+	.anime-episodes-texts {
+		padding: 5px;
+		width: 100%;
+	}
+
+	.anime-episodes-episode-title,
+	.anime-description {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.anime-episodes-episode-desc {
+		font-size: 16px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.anime-episodes-left-content {
+		width: 100%;
+	}
+
+	.anime-image-episodes {
+		width: 100% !important;
+	}
+
+	.episode-text.mobile {
+		margin-right: 0 !important;
+	}
+
+	.anime-episodes-list-container {
+		width: 100%;
+	}
+	.categories {
+		bottom: 47% ;
+	}
+}
+
+@media (max-width: 480px) {
+	.anime-episodes-content {
+		gap: 10px;
+		padding: 20px;
+		margin-top: -40px;
+	}
+
+	.anime-header-link {
+		margin-left: 0;
+		font-size: 20px;
+	}
+
+	.anime-episodes-item {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+
+	.anime-thumbnail.episodes-list {
+		width: 100% !important;
+		height: 300px !important;
+	}
+
+	.anime-image {
+		height: 300px;
+	}
+
+	.anime-episodes-list-content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.anime-episodes-details {
+		bottom: 10px;
+		padding: 0 5px;
+	}
+
+	.anime-episodes-texts {
+		padding: 5px;
+	}
+
+	.anime-episodes-episode-title,
+	.anime-description {
+		font-size: 16px;
+		margin: 0;
+	}
+
+	.anime-episodes-episode-desc {
+		font-size: 16px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.anime-episodes-left-content {
+		width: 100%;
+	}
+
+	.anime-image-episodes {
+		width: 100% !important;
+	}
+
+	.episode-text.mobile {
+		margin-right: 0 !important;
+	}
+}
+
+@media (min-width: 1024px) and (max-width:1366px) {
+	.categories {
+		bottom: 47% !important;
+	}
+}
+
+@media (max-width:1680px) {
+	.categories {
+		bottom: -24% !important;
+	}
+}
+
+@media (max-width:1440px) {
+	.categories {
+		bottom: -25% !important;
+	}
+}

@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import "@fontsource/outfit";
+import Navbar from './Components/js/Navbar';
+import Banner from './Components/js/Banner';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Throwback from './Components/js/Throwback';
+import Trending from './Components/js/Trending';
+import AnimeEps from './Components/pages/AnimeEps';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Banner />
+      <AppContent />
+    </div>
+  );
+}
+
+function AppContent() {
+  const location = useLocation();
+
+  // Determine if the current route requires hiding Trending and Throwback
+  const shouldHideTrendingAndThrowback = location.pathname.startsWith('/pages/');
+
+  return (
+    <div className='App-middle-section'>
+      {!shouldHideTrendingAndThrowback && <Trending />}
+      <Routes>
+        <Route path="/trending" element={<Trending />} />
+        <Route path="/pages/:animeID" element={<AnimeEps />} />
+        {/* Add other routes as needed */}
+      </Routes>
+      {!shouldHideTrendingAndThrowback && <Throwback />}
     </div>
   );
 }

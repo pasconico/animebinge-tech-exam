@@ -1,0 +1,21 @@
+[
+    {
+        "animeID": "01",
+        "animeTitle": "Attack On Titan",
+        "animeThumbnail": "01",
+        "animeDescription": "When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through the barriers, causing a flood of the giants into what had been the human…",
+        "animeCategory": "Adventure fiction, Dark fantasy, Martial Arts",
+        "ratings": "5.0",
+        "episodeNo": {
+            "1": {
+                "episodeDesc": "The citizens worry they will be at the Titans' mercy after many years of peace."
+            },
+            "2": {
+                "episodeDesc": "The Shiganshina citizens are under attack from the Titans."
+            },
+            "3": {
+                "episodeDesc": "Eren butt heads with Jean Kirschtein, a cadet who wants to be in the Military Police Regiment. Berholt and Reiner help Eren learn during training."
+            }
+        }
+    }
+]

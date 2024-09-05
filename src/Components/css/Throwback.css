@@ -1,0 +1,56 @@
+.throwback-anime-container {
+	position: relative;
+	font-family: "Outfit";
+}
+
+.throwback-anime-header {
+	text-align: left;
+	margin-left: 5%;
+}
+
+.throwback-anime-content {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.throwback-anime-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.throwback-anime-item:hover {
+    transform: scale(0.9); 
+}
+
+.throwback-anime-image {
+    flex: 1 1 auto;
+	position: relative;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	border-radius: 30px;
+	
+}
+
+.throwback-anime-image:hover {
+	cursor: pointer;
+}
+
+.throwback-anime-thumbnail {
+	display: block;
+	width: 409px;
+	height: 427px;
+	border-radius: 30px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.throwback-anime-thumbnail:hover {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
+}

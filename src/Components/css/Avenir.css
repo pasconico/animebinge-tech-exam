@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Avenir LT Std Black';
+    src: url(fonts/AvenirLTStd-Black.woff);
+}
+
+@font-face {
+    font-family: 'Avenir LT Std Light';
+    src: url(fonts/AvenirLTStd-Light.woff);
+}
