@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Throwback from './Components/js/Throwback';
 import Trending from './Components/js/Trending';
 import AnimeEps from './Components/pages/AnimeEps';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+
 
 function App() {
   return (
