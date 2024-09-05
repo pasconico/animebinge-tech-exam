@@ -2,7 +2,7 @@ import './App.css';
 import "@fontsource/outfit";
 import Navbar from './Components/js/Navbar';
 import Banner from './Components/js/Banner';
-import { BrowserRouter as Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Throwback from './Components/js/Throwback';
 import Trending from './Components/js/Trending';
 import AnimeEps from './Components/pages/AnimeEps';
